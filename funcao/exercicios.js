@@ -1,4 +1,4 @@
-// ATIVIDADE 1
+ // ATIVIDADE 1
 function operacoes(x, y, soma, sub, div, mult,) {
     soma = x + y
     sub = x - y
