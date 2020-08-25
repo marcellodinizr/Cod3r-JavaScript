@@ -209,5 +209,3 @@ venderFruta('maçã')
 venderFruta('kiwi')
 venderFruta('melancia')
 venderFruta('alcatra')
-
-// ATIVIDADE 15
