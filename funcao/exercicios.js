@@ -1,4 +1,4 @@
- // ATIVIDADE 1
+// ATIVIDADE 1
 function operacoes(x, y, soma, sub, div, mult,) {
     soma = x + y
     sub = x - y
@@ -209,3 +209,76 @@ venderFruta('maçã')
 venderFruta('kiwi')
 venderFruta('melancia')
 venderFruta('alcatra')
+
+// ATIVIDADE 15
+
+// ATIVIDADE 25
+let contador = 1
+for (let i = 1; i <= 50; i++) {
+    console.log(contador)
+    contador++
+}
+
+// ATIVIDADE 26
+function acharPares(n1, n2) {
+    var pares = []
+    while (n1 <= n2) {
+        if ((n1 % 2) == 0) {
+            pares.push(n1)
+        }
+        n1++
+    }
+    return pares
+}
+console.log(acharPares(0, 100))
+
+// ATIVIDADE 28
+function vetorParImpar(numeros) {
+    let qtdePar = 0
+    let qtdeImpar = 0
+    for (let i = 0; i < numeros.length; i++) {
+        if (numeros[i] % 2 == 0) {
+            qtdePar++
+        } else {
+            qtdeImpar++
+        }
+    }
+    console.log(`${qtdePar} números pares e ${qtdeImpar} números ímpares.`)
+}
+vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+vetorParImpar(vetor)
+
+// ATIVIDADE 29
+function numeroIntervalo(vetor) {
+    let qtdeNumeros = 0
+    for (let i = 0; i < vetor.length; i++) {
+        if (vetor[i] >= 10 && vetor[i] <= 20) {
+            qtdeNumeros++
+        }
+    }
+    return `${qtdeNumeros} números dentro do intervalo.`
+}
+vetor = [7, 8, 9, 10, 11, 12, 16, 17, 18, 19, 20, 21]
+console.log(numeroIntervalo(vetor))
+
+// ATIVIDAE 30
+function maiorMenor(vetor) {
+    let maior
+    let menor
+    for (let i = 0; i < vetor.length; i++) {
+        if (maior === undefined && menor === undefined) {
+            maior = vetor[i]
+            menor = vetor[i]
+        } else {
+            if (vetor[i] > maior) {
+                maior = vetor[i]
+            }
+            if (vetor[i] < menor) {
+                menor = vetor[i]
+            }
+        }
+    }
+    return [maior, menor]
+}
+vetor = [10, 5, 7, 3, 1, 3, 11, 20, 6, 9]
+console.log(maiorMenor(vetor))
