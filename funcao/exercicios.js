@@ -291,26 +291,102 @@
 // }
 // helloWorld()
 
-// ATIVIDADE 34
-function verificarString(string1, string2) {
-    estaContida = true;
-    for (let i = 0; i < string1.length; i++) {
-        let stringCaracter1 = string1.charAt(i).toLowerCase()
-        for (let j = 0; j < string2.length; j++) {
-            let stringCaracter2 = string2.charAt(j).toLowerCase()
-            if (stringCaracter1 == stringCaracter2) {
-                estaContida = true
-                break
-            } else {
-                estaContida = false
-            }
-        }
-        if (!estaContida) {     // Se não tiver e o primeiro caso for False 
-            return estaContida  // ele retorna True (com 2 ex abaixo)
-        }
-    }
-    return estaContida
-}
-console.log(verificarString('abc', 'cbb'))
-console.log(verificarString('abc', 'cba'))
+// // ATIVIDADE 34
+// function verificarString(string1, string2) {
+//     estaContida = true;
+//     for (let i = 0; i < string1.length; i++) {
+//         let stringCaracter1 = string1.charAt(i).toLowerCase()
+//         for (let j = 0; j < string2.length; j++) {
+//             let stringCaracter2 = string2.charAt(j).toLowerCase()
+//             if (stringCaracter1 == stringCaracter2) {
+//                 estaContida = true
+//                 break
+//             } else {
+//                 estaContida = false
+//             }
+//         }
+//         if (!estaContida) {     // Se não tiver e o primeiro caso for False 
+//             return estaContida  // ele retorna True (com 2 ex abaixo)
+//         }
+//     }
+//     return estaContida
+// }
+// console.log(verificarString('abc', 'cbb'))
+// console.log(verificarString('abc', 'cba'))
 
+// // ATIVIDADE 35
+// vetorPilha = [1, 2, 3, 4, 5]
+// vetorAdiciona = [6, 7, 8, 9, 10]
+
+// function adicionarVetor(vetorInicial, vetorAdicionar) {
+//     for (let i = 0; i < vetorAdicionar.length; i++) {
+//         vetorInicial.push(vetorAdicionar[i])
+//     }
+//     console.log('Vetor Adicinado: ' + vetorAdicionar)
+//     console.log('Vetor Resultado: ' + vetorInicial)
+// }
+// adicionarVetor(vetorPilha, vetorAdiciona)
+
+// // ATIVIDADE 32
+// function mediaAritmetica(vetor) {
+//     let soma = 0
+//     for (let i = 0; i < vetor.length; i++) {
+//         soma += vetor[i]
+//     }
+//     return soma / vetor.length
+// }
+// vetor = [1, 2, 3, 4, 5]
+// console.log(mediaAritmetica(vetor))
+
+// //ATIVIDADE 33
+// let vetorInteiro = [1, 2, 3, 4]
+// let vetorString = ['Arthur', 'Christian', 'Yuri', 'Galdino']
+// let vetorDouble = [1.1, 2.2, 3.3, 4.4]
+// function concatenar() {
+//     resultado = []
+//     for (let i = 0; i < arguments.length; i++) {
+//         resultado = resultado.concat(arguments[i])
+//     }
+//     return resultado
+// }
+// console.log(concatenar(vetorInteiro, vetorDouble))
+// console.log(concatenar(vetorDouble, vetorString))
+
+// // ATIVIDADE 38
+// function imprimirImpares(inicio = 0, fim = 100) {
+//     let aux
+//     if (inicio > fim) {
+//         aux = fim
+//         fim = inicio
+//         inicio = aux
+//     }
+//     for (let i = inicio; i <= fim; i++) {
+//         if (i % 2 == 1) {
+//             console.log(i)
+//         }
+//     }
+// }
+// imprimirImpares(19, 3)
+// imprimirImpares(1, 30)
+
+// // ATIVIDADE 30
+// function maiorMenor(vetor) {
+//     let maior
+//     let menor
+//     for (let i = 0; i < vetor.length; i++) {
+//         if (maior === undefined && menor === undefined) {
+//             maior = vetor[i]
+//             menor = vetor[i]
+//         } else {
+//             if (vetor[i] > maior) {
+//                 maior = vetor[i]
+//             }
+//             if (vetor[i] < menor) {
+//                 menor = vetor[i]
+//             }
+//         }
+//     }
+//     return [maior, menor]
+// }
+// vetor = [10, 5, 7, 3, 1, 3, 11, 20, 6, 9]
+// console.log(maiorMenor(vetor))
