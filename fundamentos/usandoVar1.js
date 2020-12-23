@@ -1,20 +1,19 @@
 {
+  {
     {
-        {
-            { 
-                var  sera = 'Sera???' 
-                console.log(sera)
-            }
-        }
+      {
+        var sera = "Sera???";
+        console.log(sera);
+      }
     }
+  }
 }
 
-console.log(sera)
+console.log(sera);
 
 function teste() {
-    var local = 123
-    console.log(local)
+  var local = 123;
+  console.log(local);
 }
 
-teste()
-
+teste();

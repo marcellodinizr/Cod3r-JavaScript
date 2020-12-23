@@ -1,2 +1,1 @@
 // Comentatio de uma linha
-

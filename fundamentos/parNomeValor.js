@@ -1,20 +1,20 @@
-const saudacao = 'Opa'
+const saudacao = "Opa";
 
 function exec() {
-    const saudacao = 'Fala'
-    return saudacao
+  const saudacao = "Fala";
+  return saudacao;
 }
 
 const cliente = {
-    nome: 'Pedro',
-    idade: 32,
-    peso: 90,
-    endereco: {
-        logadouro: 'Rua Legal',
-        numero: 123
-    }
-}
+  nome: "Pedro",
+  idade: 32,
+  peso: 90,
+  endereco: {
+    logadouro: "Rua Legal",
+    numero: 123,
+  },
+};
 
-console.log(saudacao)
-console.log(exec())
-console.log(cliente)
+console.log(saudacao);
+console.log(exec());
+console.log(cliente);
