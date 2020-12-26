@@ -12,5 +12,5 @@ console.log(repetir("codigo", 2));
 function repetir2(item, quantidade) {
 	return Array(quantidade).fill(item);
 }
-console.log(repetir(7, 3));
-console.log(repetir("codigo", 2));
+console.log(repetir2(7, 3));
+console.log(repetir2("codigo", 2));
