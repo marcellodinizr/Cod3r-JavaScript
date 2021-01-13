@@ -41,8 +41,7 @@ console.log(
 );
 
 function despesasTotais3(itens) {
-	return itens.reduce(
-		(acumulador, valorAtual) => acumulador + valorAtual.preco, 0);
+	return itens.reduce((acumulador, valorAtual) => acumulador + valorAtual.preco, 0);
 }
 
 console.log(
